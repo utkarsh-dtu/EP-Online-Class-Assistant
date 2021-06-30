@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    background-color: rgb(158, 171, 248);
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+
+  }
+
+  .navbar li {
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 7px;
+    background-color: blue;
+    color: white;
+    margin: 7px;
+    transition-duration: 100ms;
+  }
+
+  .navbar li:hover {
+    background-color: rgb(155, 162, 255);
+  }
+
+  .navbar li a:hover {
+    color: black;
+  }
+
+  .navbar li a {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 4px;
+    margin: 6px;
+    color: white;
+    font-weight: bolder;
+    transition-duration: 100ms;
+
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+    border-radius: 10px;
+    background-color: rgb(211, 243, 243);
+    padding: 10px;
+  }
+
+
+  .JoinCmclass {
+    display: block;
+    border: 2px solid black;
+    background-color: rgb(178, 162, 247);
+    padding: 9px;
+    border-radius: 8px;
+    width: 40%;
+    margin: auto;
+  }
+
+  .JoinCmclass:hover {
+    background-color: blue;
+    color: white;
+
+  }
+
+  .JoinCmclass a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+  }
+
+  .JoinCmclass a:hover {
+    color: white;
+  }
+  .sbs {
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 4px;
+        display: none;
+    }
+
+    .syl {
+        border: 2px solid black;
+        background-color: rgb(205, 205, 255);
+        display: block;
+        cursor: pointer;
+        /* box-decoration-break: none; */
+        padding: 7px;
+        /* margin: 10px; */
+        margin: 10px auto;
+        border-radius: 8px;
+        width: 155px;
+        /* margin: auto; */
+        outline: none;
+    }
+
+    .syl:hover {
+        background-color: blue;
+        color: white;
+        transition-duration: 100ms;
+    }
+</style>
+
+<body>
+  <ul class="navbar">
+    
+    <li><a href="index.html" target="_blank"
+>HOME</a></li>
+    <li><a href="Cm.html" target="_blank"
+>COMPUTATIONAL METHODS</a></li>
+    <li><a href="Mpi.html" target="_blank"
+>MICROPROCESSORS</a></li>
+    <li><a href="Coms.html" target="_blank"
+>COMMUNICATION SYSTEMS</a></li>
+    <li><a href="Op.html" target="_blank"
+>OPTICS</a></li>
+    <li><a href="Cmp.html" target="_blank"
+>CONDENSED MATTER PHYSICS</a></li>
+    <li><a href="MpiLab.html" target="_blank"
+>MPI Lab</a></li>
+    <!-- <li><a href="Cmp.html">MPI Lab</a></li> -->
+  </ul>
+
+
+  <div class="ClassDetails">
+    <button class="JoinCmclass"><a href="https://meet.google.com/qqu-uzsa-swi">CLICK HERE TO JOIN COMPUTATIONAL METHODS
+        CLASS CLASS</a></button>
+
+    <div class="sbs">
+     <p> UNIT I: 
+      Errors in numerical calculations: Introduction, Number and their accuracy, Errors and their analysis, Absolute, Relative, Percentage and Maximum probable error, Physical significance of errors, General error formula, Error in series approximation</p>
+
+<p>UNIT II:
+  Solution of numerical algebraic and transcendental equation: Roots of equations, Direct method and iteration method, Bisection method, Regula Falsi Method or Method of False position, Secant or Chord method, Newton-Raphson method, Solution of simultaneous linear algebraic equation: Gauss-elimination method, Gauss-Jordon elimination method, Power method, Jacobi method for finding eigen values, Rotation Matrix, Method of triangularization, Relaxation Method</p>
+
+<p>UNIT III:
+  Interpolation: Introduction, Errors in polynomial Interpolation, Finite differences, Detection of errors by use of difference tables, Differences of a polynomial, Interpolation with equally spaced data points: Newton’s forward and backward formulae for interpolation, Central difference: Gauss forward, Gauss Backward, Stirling, Bessels, Everett's formula for interpolation, Interpolation with unequally data points: Lagrange’s interpolation formula, Divided differences and their property, Newton Divided differences formula, Curve fitting: Introduction, Least square curve fitting procedures, fitting a straight line, nonlinear curve fitting, curve fitting by a sum of exponentials, Data fitting with cubic splines</p>
+
+<p>UNIT IV:
+  Numerical Differentiation and Integration: Cubic Spline method, maximum and minimum values of a tabulated data, Numerical integration, Newton-cotes integration formulae, trapezoidal method, Simpson’s 1/3-rule, Simpson’s 3/8-rule, Boole’s and Weddle’s Rule, Romberg integration, , Euler-Maclaurin formula, Gaussian integration, Numerical double integration</p>
+
+<p>UNIT V:
+  Numerical solution of ordinary differential equations: Introduction, solution by Taylor’s series, Picard’s method of successive approximation methods, Euler’s method, modified Euler’s method, Runge-Kutta method, predictor-corrector method, solution of second order and simultaneous differential equations</p>
+
+<p>UNIT VI:
+  Numerical solution of partial differential equation: Introduction, Finite difference approximations to derivatives, Laplace’s equation, Jacobi’s method, Iterative method for solution of equation</p>
+    </div>
+    <button class="syl">Show/Hide Syllabus</button>
+  </div>
+
+</body>
+
+<script>
+  document.querySelector(".syl").addEventListener("click", function () {
+        // document.querySelector(".sbs").style.display = "block";
+        if (document.querySelector(".sbs").style.display == "block") {
+            document.querySelector(".sbs").style.display = "none"
+        } else {
+            document.querySelector(".sbs").style.display = "block"
+        }
+    });
+</script>
+
+</html>

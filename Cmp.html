@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    background-color: rgb(158, 171, 248);
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+
+  }
+
+  .navbar li {
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 7px;
+    background-color: blue;
+    color: white;
+    margin: 7px;
+    transition-duration: 100ms;
+  }
+
+  .navbar li:hover {
+    background-color: rgb(155, 162, 255);
+  }
+
+  .navbar li a:hover {
+    color: black;
+  }
+
+  .navbar li a {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 4px;
+    margin: 6px;
+    color: white;
+    font-weight: bolder;
+    transition-duration: 100ms;
+
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+    border-radius: 10px;
+    background-color: rgb(211, 243, 243);
+    padding: 10px;
+  }
+
+  .JoinCmpclass {
+    display: block;
+    border: 2px solid black;
+    background-color: rgb(178, 162, 247);
+    padding: 9px;
+    border-radius: 8px;
+    width: 40%;
+    margin: auto;
+  }
+
+  .JoinCmpclass:hover {
+    background-color: blue;
+    color: white;
+
+  }
+
+  .JoinCmpclass a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+  }
+
+  .JoinCmpclass a:hover {
+    color: white;
+  }
+  .sbs {
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 4px;
+        display: none;
+    }
+
+    .syl {
+        border: 2px solid black;
+        background-color: rgb(205, 205, 255);
+        display: block;
+        cursor: pointer;
+        /* box-decoration-break: none; */
+        padding: 7px;
+        /* margin: 10px; */
+        margin: 10px auto;
+        border-radius: 8px;
+        width: 155px;
+        /* margin: auto; */
+        outline: none;
+    }
+
+    .syl:hover {
+        background-color: blue;
+        color: white;
+        transition-duration: 100ms;
+    }
+</style>
+
+<body>
+  <ul class="navbar">
+    
+    <li><a href="index.html" target="_blank"
+>HOME</a></li>
+    <li><a href="Cm.html" target="_blank"
+>COMPUTATIONAL METHODS</a></li>
+    <li><a href="Mpi.html" target="_blank"
+>MICROPROCESSORS</a></li>
+    <li><a href="Coms.html" target="_blank"
+>COMMUNICATION SYSTEMS</a></li>
+    <li><a href="Op.html" target="_blank"
+>OPTICS</a></li>
+    <li><a href="Cmp.html" target="_blank"
+>CONDENSED MATTER PHYSICS</a></li>
+    <li><a href="MpiLab.html" target="_blank"
+>MPI Lab</a></li>
+    <!-- <li><a href="Cmp.html">MPI Lab</a></li> -->
+  </ul>
+
+
+  <div class="ClassDetails">
+    <button class="JoinCmpclass"><a href="https://meet.google.com/yit-txii-zyx">CLICK HERE TO JOIN CONDENSED MATTER
+        PHYSICS CLASS CLASS</a></button>
+  </div>
+  <div class="sbs">
+    <p>Crystal Structure and bonding:Introduction to crystal physics,Bravais lattices, Symmetry operations, Miller indices, Interplanar spacing, X-ray diffraction, Reciprocal lattice, Brillouin zones, Ionic bonding, Bond dissociation energy, Madelung constant of ionic crystals, Covalent, Metallic and Intermolecular bonds, Defects in crystals, Point and line defects.</p>
+
+
+<p>Lattice Vibrations: Lattice vibration and thermal properties: Einstein and Debye models; continuous solid; linear lattice; acoustic and optical modes; dispersion relation; attenuation; density of states; phonons and quantization; thermal conductivity of metals and insulators.</p>
+
+
+<p>Free Electron Theory: Free electron theory of metals; Electronic motion in a one and three dimensional potential well; Fermi energy, total energy, Density of states, Fermi-Dirac Distribution function, Wave equation in a periodic potential and Bloch theorem; Kronig-Penny model; band theory; Distinction between metal, semiconductor and insulators; band gap.</p>
+
+<p>
+  Dielectrics: Polarization mechanism and types, dielectric constant, polarizabilities, Electronic, Ionic, Orientation/ dipolar polarizations under DC / AC field, Local Field, ClausiusMossoti equation, Behaviour of polarization under impulse, Dielectric loss, ferroelectric, piezoelectric and pyroelectric materials, application of dielectric materials.
+  </p>
+
+<p>Magnetism: Magnetism: concept of magnetism, permeability and susceptibility. classification of dia-, para-, ferro-, antiferro and ferrimagnetism (Ferrites), Langevin theory of diamagnetism&paramagnetism, Weiss theory of paramagnetism, Ferromagnetic materials, Origin of internal field and exchange interaction, Domain theory, Bloch wall, Hysteresis, magnetic storage and surfaces, Application of magnetic materials, GMR.
+</p>
+
+<p>Superconductivity: Introduction and historical developments; Meissner effect and its contradiction to the Maxwell’s equation; Effect of magnetic field, Type-I and Type-II superconductors, Critical parameters, Thermal properties, energy gap, Isotope effect, London equations, Penetration depth, Coherence length, BCS theory, Cooper pair, ground state, Josephson effect and tunnelling, Applications of superconductors.</p>
+  </div>
+  <button class="syl">Show/Hide Syllabus</button>
+</body>
+
+<script>
+   document.querySelector(".syl").addEventListener("click", function () {
+        // document.querySelector(".sbs").style.display = "block";
+        if (document.querySelector(".sbs").style.display == "block") {
+            document.querySelector(".sbs").style.display = "none"
+        } else {
+            document.querySelector(".sbs").style.display = "block"
+        }
+    });
+</script>
+
+</html>
